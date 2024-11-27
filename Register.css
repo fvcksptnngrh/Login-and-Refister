@@ -1,0 +1,115 @@
+/* Reset dasar untuk margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mengatur font dasar */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Membuat div input untuk centering */
+.input {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Styling header */
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Styling input field */
+.input-field {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 12px;
+    padding-left: 40px; /* Memberikan ruang untuk ikon */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+/* Warna border saat fokus pada input */
+.input-field input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Ikon di dalam input */
+.input-field i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #888;
+}
+
+/* Tombol Registrasi */
+.btn-input {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.btn-input:hover {
+    background-color: #45a049;
+}
+
+/* Bagian bawah untuk link login */
+.buttom {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.buttom p {
+    color: #888;
+}
+
+.buttom a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.buttom a:hover {
+    text-decoration: underline;
+}
+
+/* Responsif untuk layar lebih kecil */
+@media (max-width: 768px) {
+    .input {
+        padding: 20px;
+    }
+    .input-field {
+        margin-bottom: 15px;
+    }
+}
